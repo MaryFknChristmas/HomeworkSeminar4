@@ -2,5 +2,10 @@
 int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int numberB = Convert.ToInt32(Console.ReadLine());
-int result = Convert.ToInt32(Math.Pow(numberA, numberB));
-Console.WriteLine(result);
+int result = 1;
+
+for(int i = 0; i < numberB; i++)
+{
+    result = result * numberA;
+}
+Console.WriteLine($"Число {numberA} в степени {numberB} равно {result}");
